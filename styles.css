@@ -1,0 +1,90 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background:#f4f6f9; color:#333; line-height:1.6; }
+
+/* Header */
+header {
+  background: linear-gradient(120deg,#005c99,#007acc);
+  color: white;
+  padding:3rem 1rem;
+  text-align:center;
+  box-shadow:0 4px 8px rgba(0,0,0,0.1);
+}
+header h1 { font-size:2.5rem; }
+header p { font-size:1.1rem; margin-top:0.5rem; }
+
+/* Sections */
+section {
+  max-width:900px;
+  margin:2rem auto;
+  padding:2rem;
+  background:white;
+  border-radius:10px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.05);
+}
+.info li {
+  list-style:none;
+  background:#e6f2ff;
+  padding:0.8rem;
+  border-left:4px solid #007acc;
+  border-radius:5px;
+  margin-bottom:0.8rem;
+}
+.university-links ul { list-style:none; padding:0; }
+.university-links li { margin:0.6rem 0; }
+.university-links a {
+  color:#007acc; text-decoration:none;
+  font-weight:500;
+  transition:color 0.3s;
+}
+.university-links a:hover { color:#005c99; text-decoration:underline; }
+
+/* Footer */
+footer {
+  background:#f1f1f1;
+  text-align:center;
+  padding:2rem 1rem;
+  font-size:0.95rem;
+  color:#555;
+}
+
+/* WhatsApp Button */
+.whatsapp-float {
+  position:fixed;
+  bottom:25px;
+  right:25px;
+  width:60px;
+  height:60px;
+  z-index:999;
+  background:#25d366;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 4px 8px rgba(0,0,0,0.2);
+  transition:transform 0.3s ease;
+}
+.whatsapp-float:hover { transform:scale(1.1); }
+.whatsapp-float svg { width:32px; height:32px; }
+
+/* Mobile */
+@media(max-width:768px){
+  header h1 { font-size:2rem; }
+  section { margin:1rem; padding:1.5rem; }
+  .whatsapp-float { width:50px; height:50px; }
+  .whatsapp-float svg { width:28px; height:28px; }
+}
+.terms {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-top: 1px solid #ccc;
+}
+.terms h2 {
+  color: #2a2a2a;
+}
+.terms ol {
+  padding-left: 1.2rem;
+}
+.terms li {
+  margin-bottom: 0.8rem;
+}
